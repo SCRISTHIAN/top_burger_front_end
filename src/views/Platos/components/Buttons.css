@@ -1,0 +1,13 @@
+.boton-head{
+    top: 10px;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+.boton-head button{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    /* margin-right: 60px; */
+    /* padding-right: 20px; */
+    margin-right: 10px;
+}

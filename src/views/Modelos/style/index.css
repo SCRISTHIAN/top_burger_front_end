@@ -1,0 +1,67 @@
+.ufa{
+    display: flex;
+}
+.tables{
+    font-size: 20px;
+    background-color: #202324; 
+    width: 50%;
+    height: 35%;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.tables3{
+    font-size: 20px;
+    background-color: #202324; 
+    width: 43.8%;
+    height: 100%;
+    margin-top: -135px;
+    margin-left:53%; ;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 25px;
+}
+.tables1{
+    display: flex;
+    font-size: 20px;
+    background-color: #202324; 
+    width: 45%;
+    height: 35%;
+    margin-top: -28.8%;
+    margin-left: 53%;
+    border-radius: 20px;
+    padding: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202324; 
+    padding: 5px;
+}
+.header h3{
+ font-size:30px;
+ font-weight:lighter;
+ color:beige ;
+ margin-left: 5px;
+}
+.header button {
+    background: none;
+    border: 2px solid #ff8000;
+    border-radius:15px;
+    padding: 10px;
+    padding-top: 8px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    margin-left: 175px;
+  }
+.header .uwu{
+ 
+    margin-left: 175px;
+  }
+.body{
+    display: block;
+   
+}

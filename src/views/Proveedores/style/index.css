@@ -1,0 +1,56 @@
+.body{
+    width: 350px;
+    
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 50px;
+    padding-top:0px ;
+}
+.body .card{
+    display: block;
+    background-color: #202324;
+    padding: 25px;
+    padding-top:10px ;
+    margin-right: -45px;
+    border-radius: 25px;
+}
+.body .card .img2{
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+    margin-left: 95px;
+}
+.body .card .t1{
+    margin-top: 10px;
+    font-size: 35px;
+    color: bisque;
+    margin-left: 87px;
+}
+.body .card .t2{
+    font-size: 35px;
+    color: bisque;
+    margin-top: -15px;
+    margin-left: 65px;
+}
+.uwuwuw{
+    display: flex;
+    justify-content: space-around;
+}
+.body .card button{
+    margin-left: 10px;
+    background: none;
+    border: 2px solid #ff8000;
+    border-radius:15px;
+    padding: 10px;
+    padding-top: 8px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.coni{
+    width: 365px;
+    margin: 15px;
+    margin-left: -3px;
+}

@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 900px;
+  }
+  
+  .view {
+    display: flex;
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    padding: 0;
+    margin: 0;
+    background-color: #202324;
+  }
+  
+  .container-login {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    width: 720px;
+    align-items: center;
+  }
+  
+  .login-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 421px;
+    height: 149px;
+    left: 50px;
+    top: 120px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 116px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .inputs-login {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    padding-bottom: 76px;
+  }
+  
+  .user-name {
+    position: relative;
+    width: 484px;
+    height: 83px;
+    left: 50px;
+    top: 0;
+    background: #d9d9d9;
+    border-radius: 100px;
+    color: #000;
+  }
+  
+  .pass-word {
+    position: relative;
+    width: 484px;
+    height: 83px;
+    left: 50px;
+    top: 50px;
+    background: #d9d9d9;
+    border-radius: 100px;
+    color: #000;
+  }
+  
+  .button-login {
+    display: flex;
+    position: relative;
+    width: 390px;
+    height: 83px;
+    left: 50px;
+    top: 210px;
+    align-items: center;
+    justify-content: center;
+    background: #f9a63a;
+    border-radius: 100px;
+  }
+  
+  .button-login button {
+    width: 390px;
+    height: 83px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #f9a63a;
+    border: none;
+    border-radius: 100px;
+  
+  }
+  
+  .draw-container {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 720px;
+    height: 900px;
+    background-color: #202324;
+  }
+  .i1 {
+    position: absolute;
+    left: 200px;
+    right: 18.39%;
+    top: 20px;
+    width: 250px;
+    height: 250px;
+  
+    opacity: 0.4;
+    transform: matrix(0.9, -0.43, 0.36, 0.93, 0, 0);
+  }
+  
+  .i2 {
+    position: absolute;
+    left: 100px;
+    right: 29.4%;
+    top: 350px;
+    width: 200px;
+    height: 200px;
+  
+    opacity: 0.4;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: matrix(0.89, -0.46, 0.38, 0.92, 0, 0);
+  }
+  
+  .i3 {
+    position: absolute;
+    left: 500px;
+    right: 7.34%;
+    top: 300px;
+    width: 150px;
+    height: 150px;
+  
+    opacity: 0.4;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: matrix(0.88, -0.47, 0.4, 0.92, 0, 0);
+  }
+  
+  .i4 {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 400px;
+    right: 9.87%;
+    top: 500px;
+    opacity: 0.4;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: matrix(0.91, -0.41, 0.34, 0.94, 0, 0);
+  }
+  
+  .draw {
+    display: flex;
+    width: 720px;
+    height: 900px;
+    left: 300px;
+    padding: 0;
+    margin: 0;
+  }

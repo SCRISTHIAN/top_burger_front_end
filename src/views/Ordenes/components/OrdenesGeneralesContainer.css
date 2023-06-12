@@ -1,0 +1,12 @@
+.ordenesgenerales-container{
+    width: 1080px;
+    height: 188px;
+    background-color:  #272727;
+    margin: 0px 0px 14px 10px;
+    border-radius: 8px;
+}
+.ordenesgenerales-container h3{
+    margin-left: 16px;
+    padding-top: 16px;
+
+}

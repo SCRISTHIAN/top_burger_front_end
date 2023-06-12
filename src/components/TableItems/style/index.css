@@ -1,0 +1,44 @@
+.table-container-main {
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #202324;
+    width: 100%;
+  }
+  .table-only {
+    height: 310px; 
+    overflow: auto;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .table-container-main h3 {
+    margin-left: 10px;
+  }
+  
+  .table-container-main table {
+    margin-left: 10px;
+    width: 100%;
+    border-collapse: collapse; 
+    overflow: hidden;
+  }
+  
+  .table-container-main th,
+  .table-container-main td {
+    padding: 1em 0;
+    text-align:center;
+  }
+  
+  .table-container-main .table-row {
+    border-bottom: 2px solid white;
+  }
+  
+  
+  .table-container-main .table-row td {
+    padding: 10px 0;
+  }
+  

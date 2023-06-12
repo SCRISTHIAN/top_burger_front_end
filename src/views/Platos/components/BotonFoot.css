@@ -1,0 +1,14 @@
+.boton-foot{
+    top: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.boton-foot button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* margin-right: 60px; */
+    /* paddings-right: 20px; */
+    /* margin-right: 500px; */
+    margin-left: 20px;
+}

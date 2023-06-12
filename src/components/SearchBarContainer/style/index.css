@@ -1,0 +1,40 @@
+.searchbar-container {
+    margin: 0px 0px 0px 32px;
+    display: flex;
+    width: 420px;
+    height: 44px;
+    border: 2px solid  #f79009;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #272727;
+  }
+
+  .searchbar-container .icon {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .searchbar-container input {
+    border: none;
+    border-radius: 10px;
+    width: 402px;
+    background-color: #272727;
+    outline: none; 
+  }
+
+.ufa{
+  background-color:#202324;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
+.ufa .notification{
+  margin-left:54.5%;
+  padding: 8px;
+  border: 2px solid  #f79009;
+  border-radius: 25px;
+}
+  

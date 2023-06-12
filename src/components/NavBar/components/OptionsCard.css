@@ -1,0 +1,43 @@
+.options-card {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    width: 186px;
+    height: 56px;
+  }
+  .options-card .icons {
+    color: #f79009;
+  }
+  .options-card span {
+    color: white;
+    margin-left: 16px;
+    font-size: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+  }
+  .options-card span.active {
+    color: #f79009;
+  }
+  .options-card-last-option {
+    display: flex;
+    align-items: center;
+    margin-top: 268px;
+    margin-left: 40px;
+    width: 186px;
+    height: 56px;
+  }
+  .options-card-last-option .icons {
+    color: #f79009;
+  }
+  .options-card-last-option span {
+    color: white;
+    margin-left: 16px;
+    font-size: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+  }
+  .options-card-last-option span.active {
+    color: #f79009;
+  }

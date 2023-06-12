@@ -1,0 +1,155 @@
+
+.ufaufa3{
+    background-color: #202324;
+    margin-left: -100px;
+    margin-right: -40px;
+    margin-top: -15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.ufaufa3 .head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ufaufa3 .head .head_name{
+    font-size:15px;
+    color: aliceblue;
+}
+.ufaufa3 .head .head_button{
+    font-size: 10px;
+    margin: 10px;
+    background-color: #202324;
+    border: 2px solid #ff8000;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ufaufa3 .body{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.ufaufa3 .body .body_img{
+    width: 75px;
+    height: 75px;
+}
+.ufaufa3 .body .info{
+    margin-left: -40px;
+}
+.ufaufa3 .body .info .info_name{
+    font-size: 15px;
+    color: aliceblue;
+}
+.ufaufa3 .body .info .info_cantidad{
+    font-size: 10px;
+    color: aliceblue;
+}
+.ufaufa3 .body .body_nivel{
+    font-size: 15px;
+    padding-top: 18px;
+    color:#fe4b68 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ufaufa1{
+    display: inline-flex;
+}
+.ufaufa2{
+    display: block;
+    width: 21.5%;
+    margin-left:75% ;
+    margin-top:-61.4%;
+    align-items: center;
+ 
+}
+.container_3{
+    width: 70%;
+    display: flex;
+    
+}
+.container_2{ 
+    width:100%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    background-color: #202324;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container_2 .txt_1{
+    font-size: 22px;
+    font-weight: bold;
+}
+.container_2 .icon_2{
+    padding: 0px;
+    size: 25px;
+}
+
+
+.container{
+    background-color:#202324;
+    width: 70%;
+    height: 23%;
+    margin-top: 10px;
+    transform: none;
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.container .name1{
+   font-size: 24px;
+   color: white;
+    font-weight: 500;
+}
+.container .container2{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.container .name2{
+ display: block;
+ width: 200px;
+ justify-content: center;
+ align-items: center;
+ 
+border-radius: 10px;
+margin-top: 5px;
+margin-bottom: 25px;
+padding: 6px;
+
+}
+.container .name2 .one{
+    margin-top: 12px;
+   margin-left: 80px;
+   margin-right: 80px;
+}
+
+.container .container2 .name2 .two {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    color: beige;
+ }

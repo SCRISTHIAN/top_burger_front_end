@@ -1,0 +1,31 @@
+.ordenesgenerales-card{
+    width: 1000px;
+    height: 89px;
+    margin-left: 20px;
+}
+.ordenesgenerales-card h4{
+    font-size: 16px;
+    color: #f79009;
+    
+}
+.quancash-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+}
+.quancash-container span{
+    font-size: 14px;
+    
+}
+.quan-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.cash-container{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: 50px;
+}
