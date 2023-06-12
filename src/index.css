@@ -1,4 +1,4 @@
-:root {
+ :root {
   margin: 0px 0px 0px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,4 +24,4 @@
   display: flex; 
   flex-direction: column;
   width: 1160px;
-}
+} 
