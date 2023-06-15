@@ -53,6 +53,8 @@ const PlatosMasVendidos = () => {
           { header: "Rol", accessor: "rol" },
           { header: "Usuario", accessor: "usuario" },
         ]}
+        height={"200px"}
+        width={"1130px"}
       />
     </div>
   );

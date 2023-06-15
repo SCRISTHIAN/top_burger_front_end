@@ -1,41 +1,52 @@
-.coni {
+.ufaufa .coni {
+    width: 1131px;
     display: flex;
-    width: 430px;
     padding: 15px;
     margin-right: 20px;
-    margin-top: 20px;
-    height: 50px;
+    margin-top: 25px;
+    height: 40px;
     border-radius: 15px;
-    background-color: #202324;
+    background-color: #202324; 
     justify-content: space-around;
-    align-items: center;
+}
+.spacer{
+    height: 40px;
+    margin-top: -90px;
 }
 .coni h2{
     font-size: 15px;
     color: aliceblue;
     font-weight: bold;
+    margin-left: 50px;
+
 }
 .coni button{
     background: none;
     border: 2px solid #ff8000;
     border-radius:15px;
     padding: 10px;
+    width: 200px;
     padding-top: 8px;
     font: inherit;
     color: inherit;
     cursor: pointer;
-    
+}
+.ufaufa .coni .ufaufita{
+    background-color: #ff8000;
+    color: aliceblue;
 }
 .ufaufa{
-    margin-top: 25px;
-    display: block;
-    height: 700px;
-    width: 430px;
+    padding-top: 0px;
+    margin-top: 40px;
+    margin-left: 2px;
+    margin-bottom: 50px;
+    height: 100px;
+    width: 1127px;
     margin-right: 50px;
     justify-content: center;
     align-content: center;
 }
-.ufaufa1{
+/* .ufaufa1{
     padding: 10px;
     width: 430px;
     background-color: #202324;
@@ -44,4 +55,4 @@
     margin-top: 30px;
     margin-left: 5px;
     border-radius: 15px;
-}
+} */

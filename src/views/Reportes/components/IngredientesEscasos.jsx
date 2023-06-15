@@ -18,6 +18,8 @@ const IngredientesEscasos = () => {
           { header: "Email", accessor: "email" },
           { header: "Age", accessor: "age" },
         ]}
+        height={"200px"}
+        width={"1130px"}
       />
     </div>
   );

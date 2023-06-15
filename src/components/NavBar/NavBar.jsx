@@ -85,7 +85,7 @@ const NavBar = () => {
           isActive={activeOption === "Modelos"}
         />
       </NavLink>
-      <NavLink to={"/login"} onClick={() => setActiveOption("")}>
+      <NavLink  to={"/login"} onClick={() => setActiveOption("")}>
         <OptionsCard
           description={"Cerrar Sesión"}
           iconName={"mdi:logout"}

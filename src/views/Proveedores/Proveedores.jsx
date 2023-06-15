@@ -7,6 +7,7 @@ import {getProveedoresItems} from '../../services/get.proveedores.servicies';
 import {AiFillPhone,AiOutlineCopy,AiOutlineFunnelPlot,AiOutlinePrinter} from 'react-icons/ai'
 import { ProveedorInfo } from './components/ProveedorInfo';
 import { Buttons } from './components/Buttons';
+import { HeaderProveedor } from './components/HeaderProveedor';
 const Proveedores = () => {
     const dispatch = useDispatch();
     const proveedores = useSelector((state) => state.proveedores);
@@ -17,6 +18,7 @@ const Proveedores = () => {
     }, []);
     return (
       <div className="platos-container">
+        <HeaderProveedor/>
         <TableItems
           title="Proveedores"
           data={proveedores.proveedores}
@@ -26,17 +28,11 @@ const Proveedores = () => {
             { header: "Telefono", accessor: "telefono" },
             { header: "Direccion", accessor: "direccion" },
           ]}
-          height={"750px"}
-          width={"700px"}
+          height={"700px"}
+          width={"1130px"}
         />
-        <div className='body'>
-          <ProveedorInfo/>
-          <Buttons/>
-        
-        <ProveedorInfo/>
         
 
-        </div>
 
       </div>
     );

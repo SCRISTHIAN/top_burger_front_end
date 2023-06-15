@@ -1,14 +1,26 @@
 
+import { useDispatch,useSelector } from 'react-redux';
 import { BarraGraph } from '../../components/Graphs/BarraGraph';
 import { LineGraph } from '../../components/Graphs/LinesGraph';
+import { useEffect } from 'react';
+import { getIoItems } from '../../services/get.io.services';
 import './style/index.css';
 
 const Modelos = () => {
+    const dispatch = useDispatch();
+    const io = useSelector((state) => state.io);
+     useEffect(() => {
+      if(io.ioItems.length===0){
+        dispatch(getIoItems());
+      }
+    }, []);
+    const data=io.ioItems;
+    const key=Object.keys(data);
     return (
         <>
   
             <div className='tables'>
-                <BarraGraph/>
+                <BarraGraph data={io.ioItems}/>
             </div>
             <div className='tables1'>
                 <LineGraph/>
@@ -22,6 +34,10 @@ const Modelos = () => {
                     </div>
                     {/* /**en aca ta tabla   */}
                 </div>
+
+
+
+
                 <div className='tables3'>
                     <div className='header'>
                         <h3>INFERENCIAS</h3>

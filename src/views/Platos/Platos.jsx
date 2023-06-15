@@ -9,11 +9,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getPlatosItems } from '../../services/get.platos.services';
 import { HeaderPlatos } from './components/HeaderPlatos';
 const Platos = () => {
-
   const dispatch = useDispatch();
   const platos = useSelector((state) => state.platos);
-  
-
   useEffect(() => {
     if(platos.platos.length===0){
       dispatch(getPlatosItems());
@@ -24,6 +21,7 @@ console.log(platos)
   return (
     <div className="platos-container">
       <HeaderPlatos/>
+      <div className='table-platos'>
       <TableItems
         title="Platos"
         data={platos.platos}
@@ -33,8 +31,10 @@ console.log(platos)
           { header: "Precio", accessor: "precio" },
           { header: "Tiempo de preparacion", accessor: "tiempo_preparacion" },
         ]}
-        height={"700px"}
+        height={"690px"}
+        width={"1130px"}
       /> 
+      </div>
     </div>
   );
 };

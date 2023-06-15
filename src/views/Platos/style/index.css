@@ -71,5 +71,6 @@
   margin-top: -30px;
 }
 .platos-container{
-  display: inline-flex;
+  display: block;
+  width: 100%;
 }
