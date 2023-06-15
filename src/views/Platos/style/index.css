@@ -17,6 +17,7 @@
   margin-top: 10%;
   transform: translateX(30%);
 }
+
 .cell-t{
   color: #667085;
   font-family: 'Inter', sans-serif;
@@ -71,6 +72,9 @@
   margin-top: -30px;
 }
 .platos-container{
+  margin-top: 25px;
   display: block;
   width: 100%;
+  background-color: #202324;
+  border-radius: 30px;  
 }

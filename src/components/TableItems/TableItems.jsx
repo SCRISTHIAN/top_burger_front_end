@@ -1,4 +1,5 @@
 
+import { colors } from '@mui/material';
 import './style/index.css';
 
 const TableItems = ({ data, columns, title, height, width}) => {
@@ -16,14 +17,20 @@ const TableItems = ({ data, columns, title, height, width}) => {
             </thead>
             <tbody>
               {data.map((item, index) => (
+
                 // //EN ACA EL LISTERNER 
                 <tr className="table-row" key={index}>
-              
+              {/* //<button className="table-row" key={index} onClick={() => redirectToDetails(item.id)}> */}
                   {columns.map((column) => (
-                    <td key={column.accessor}>{item[column.accessor]}</td>
+                    console.log(column.accessor),
+                    <td key={column.accessor} 
+                    style={{
+                      color:item[column.accessor]==='Agotado' ?'#fe4b68': (item[column.accessor]==='Disponible' ?'#00ff40': '' )
+                    }}
+                    >{item[column.accessor]}</td>
                   ))}
-
-                </tr>
+                {/* //</button> */}
+               </tr>
               ))}
             </tbody>
           </table>

@@ -4,6 +4,7 @@ import {AiFillCarryOut,AiFillBuild,AiFillRocket,AiOutlineBarChart,AiOutlineBlock
 import { useEffect } from "react";
 import { getPlatosItems } from "../../../services/get.platos.services";
 import TableItems from "../../../components/TableItems/TableItems";
+import { HeaderDashboard } from "./HeadDash";
 
 
 
@@ -36,7 +37,8 @@ export function Reports(){
                  <CardReport icon={AiOutlineDeploymentUnit} percentaje='800' color="#00ffff" name='Costo' />
             </div>
         </div>
-        <div className="container_3">
+        <HeaderDashboard />
+        <div style={{marginTop:"-100px"}} className="container_3">
             <TableItems
             title="Platos"
             data={platos.platos}
@@ -46,8 +48,8 @@ export function Reports(){
             { header: "Precio", accessor: "precio" },
             { header: "Tiempo de preparacion", accessor: "tiempo_preparacion" },
             ]}
-            width={"700px"}
-            height={"200px"}
+            width={"728px"}
+            height={"235px"}
             />
 
         </div>

@@ -26,9 +26,10 @@ function App() {
           {notLoginPage && <SearchBarContainer />}
           <Provider store={store}>
           <Routes>
+            <Route path="/" element={<Dashboard/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard/>}/>
-            {/* <Route path="/menudeldia" element={<MenuDelDia/>} />  */}
+            <Route path="/menudeldia" element={<MenuDelDia/>} />  
             <Route path="/platos" element={<Platos />} />
             <Route path="/ingredientes" element= {<Ingredientes />} /> 
             <Route path="/reportes" element={<Reportes />} />

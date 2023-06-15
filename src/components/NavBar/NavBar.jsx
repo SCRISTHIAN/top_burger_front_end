@@ -5,9 +5,7 @@ import { NavLink } from "react-router-dom";
 import OptionsCard from "./components/OptionsCard"
 
 const NavBar = () => {
-  const [activeOption, setActiveOption] = useState(null);
-
-  
+  const [activeOption, setActiveOption] =useState("Dashboard");
   return (
     <div className="navbar-container">
       <h3>TOP BURGUER</h3>
@@ -38,7 +36,6 @@ const NavBar = () => {
           isActive={activeOption === "Platos"}
         />
       </NavLink>
-
       <NavLink
         to={"/ingredientes"}
         onClick={() => setActiveOption("Ingredientes")}

@@ -3,32 +3,39 @@
 
 import './style/index.css';
 import TableItems from "../../components/TableItems/TableItems";
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getMenuItems } from '../../services/get.menudeldia';
+import { HeaderMenu } from './components/HeaderMenu';
 
 
 const MenuDelDia = () => {
-    const [platos, setPlatos] = useState([]);
-    useEffect(() => {
-      getJson("/menudeldia").then((data) => {
-        setPlatos(data);
-      });
-    }, []);
-    const date = new Date();
-    const formattedDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
-    return (
-      <div className="menudeldia-container">
-        <TableItems
-          title={`Menu del dia: ${formattedDate}`}
-          data={platos}
-          columns={[
-            { header: "Nombre", accessor: "Nombre" },
-            { header: "Precio", accessor: "Precio" },
-            { header: "Unidades Restantes", accessor: "MaxDishes" },
-            { header: "Disponibilidad", accessor: "Disponibilidad" },
-          ]}
-          height={"700px"}
-        />
+  const dispatch = useDispatch();
+  const menu = useSelector((state) => state.menu);
+  useEffect(() => {
+    if(menu.menu.length===0){
+      dispatch(getMenuItems());
+    }
+   
+  }, []);
+  return (
+    <div className="platos-container">
+      <HeaderMenu/>
+      <div className='table-platos'>
+      <TableItems
+        data={menu.menu}
+        columns={[
+          { header: "Nombre", accessor: "Nombre" },
+          { header: "Precio", accessor: "Precio" },
+          { header: "MaxDishes", accessor: "MaxDishes" },
+          { header: "Disponibilidad", accessor: "Disponibilidad" },
+        ]}
+        height={"690px"}
+        width={"1130px"}
+      /> 
       </div>
-    );
+    </div>
+  );
   };
   
   export default MenuDelDia;

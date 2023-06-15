@@ -25,8 +25,10 @@ const Proveedores = () => {
           columns={[
             { header: "Id", accessor: "id_proveedor" },
             { header: "Nombres", accessor: "nombre" },
+            
             { header: "Telefono", accessor: "telefono" },
             { header: "Direccion", accessor: "direccion" },
+            { header: "Provee", accessor: "ingredientes" },
           ]}
           height={"700px"}
           width={"1130px"}

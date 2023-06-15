@@ -5,6 +5,7 @@ import empleadosReducer from './states/empleado';
 import ingredientesReducer from './states/ingrediente';
 import platosReducer from './states/plato';
 import  ioReducer  from './states/io';
+import  menuReducer  from './states/menu';
 
 
 
@@ -16,6 +17,7 @@ const store = configureStore({
       ingredientes: ingredientesReducer,
       platos: platosReducer,
       io: ioReducer,
+      menu: menuReducer,
     },
   }
 );

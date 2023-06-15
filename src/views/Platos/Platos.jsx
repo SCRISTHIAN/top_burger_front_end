@@ -6,33 +6,40 @@ import React, { useEffect } from 'react';
 import './style/index.css';
 import TableItems from "../../components/TableItems/TableItems";
 import { useDispatch, useSelector } from 'react-redux';
-import { getPlatosItems } from '../../services/get.platos.services';
+import { getMenuItems } from '../../services/get.menudeldia';
 import { HeaderPlatos } from './components/HeaderPlatos';
+
 const Platos = () => {
+  // const dispatch = useDispatch();
+  // const platos = useSelector((state) => state.platos);
+  // useEffect(() => {
+  //   if(platos.platos.length===0){
+  //     dispatch(getPlatosItems());
+  //   }
+   
+  // }, []);
   const dispatch = useDispatch();
-  const platos = useSelector((state) => state.platos);
+  const menu = useSelector((state) => state.menu);
   useEffect(() => {
-    if(platos.platos.length===0){
-      dispatch(getPlatosItems());
+    if(menu.menu.length===0){
+      dispatch(getMenuItems());
     }
    
   }, []);
-console.log(platos)
   return (
     <div className="platos-container">
       <HeaderPlatos/>
       <div className='table-platos'>
       <TableItems
-        title="Platos"
-        data={platos.platos}
-        columns={[
-          { header: "Id", accessor: "id_plato" },
-          { header: "Platos", accessor: "nombre" },
-          { header: "Precio", accessor: "precio" },
-          { header: "Tiempo de preparacion", accessor: "tiempo_preparacion" },
-        ]}
-        height={"690px"}
-        width={"1130px"}
+             data={menu.menu}
+             columns={[
+               { header: "Nombre", accessor: "Nombre" },
+               { header: "Precio", accessor: "Precio" },
+               { header: "MaxDishes", accessor: "MaxDishes" },
+               { header: "Disponibilidad", accessor: "Disponibilidad" },
+             ]}
+             height={"690px"}
+             width={"1130px"}
       /> 
       </div>
     </div>
