@@ -44,14 +44,14 @@ export function BarraGraph(props) {
         {
           // label: Object.keys(props.data[0]),
           //label:'Mayonesa',
-          label:key[0].toUpperCase(),
+          label:key[0],
           data: data2,
           backgroundColor: "#FF8000",
         },
         {
             //label: Object.keys(props.data[1]),
             //lablel:'Papas',
-          label:key[1].toUpperCase(),
+          label:key[1],
             data: data3,
             backgroundColor: "#00ffff",
         },

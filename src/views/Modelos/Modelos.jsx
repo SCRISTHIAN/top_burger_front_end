@@ -5,6 +5,7 @@ import { LineGraph } from '../../components/Graphs/LinesGraph';
 import { useEffect } from 'react';
 import { getIoItems } from '../../services/get.io.services';
 import './style/index.css';
+import TableItems from '../../components/TableItems/TableItems';
 
 const Modelos = () => {
     const dispatch = useDispatch();
@@ -32,6 +33,19 @@ const Modelos = () => {
                         <h3>REQUERIMIENTOS</h3>
                         <button>Actualizar</button>
                     </div>
+                    {/* <TableItems
+                              data={io.ioItems}
+                              columns={[
+                                { header: "Semana 1", accessor: "id_proveedor" },
+                                { header: "Semana 2", accessor: "nombre" },
+                                { header: "Semana 3", accessor: "telefono" },
+                                { header: "Semana 4", accessor: "direccion" },
+                              ]}
+                              height={"700px"}
+                              width={"1130px"}
+                    
+                    /> 
+                    */}
                     {/* /**en aca ta tabla   */}
                 </div>
 
