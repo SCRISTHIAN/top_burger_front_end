@@ -1,6 +1,7 @@
 
 import { colors } from '@mui/material';
 import './style/index.css';
+import { NavLink } from 'react-router-dom';
 
 const TableItems = ({ data, columns, title, height, width}) => {
     return (
@@ -20,16 +21,24 @@ const TableItems = ({ data, columns, title, height, width}) => {
 
                 // //EN ACA EL LISTERNER 
                 <tr className="table-row" key={index}>
-              {/* //<button className="table-row" key={index} onClick={() => redirectToDetails(item.id)}> */}
-                  {columns.map((column) => (
-                    console.log(column.accessor),
-                    <td key={column.accessor} 
-                    style={{
-                      color:item[column.accessor]==='Agotado' ?'#fe4b68': (item[column.accessor]==='Disponible' ?'#00ff40': '' )
-                    }}
-                    >{item[column.accessor]}</td>
-                  ))}
-                {/* //</button> */}
+                  {
+                    columns.map(
+                        (column) => (
+                          <td key={column.accessor} 
+                            style={{
+                              color:item[column.accessor]==='Agotado' ?'#fe4b68': (item[column.accessor]==='Disponible' ?'#00ff40': '' )
+                            }}
+                          >
+                            <NavLink to={'/dashboard'}>
+                               {item[column.accessor]}
+                            </NavLink>
+                          
+                          
+                          
+                          </td>
+                        )
+                    )
+                  }
                </tr>
               ))}
             </tbody>

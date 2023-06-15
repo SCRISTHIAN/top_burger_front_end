@@ -2,21 +2,38 @@
 import ReviewItems from './ReviewItems';
 import '../style/index.css';
 import {AiOutlineFolderOpen,AiOutlineTeam} from "react-icons/ai";
+import { getProveedoresItems } from '../../../services/get.proveedores.servicies';
+import { useDispatch,useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getPlatosItems } from '../../../services/get.platos.services';
 
 const Review = () => {
+    const dispatch = useDispatch();
+    const platos = useSelector((state)=>state.platos);
+    const proveedores = useSelector((state) => state.proveedores);
+    
+    useEffect(() => {
+      if(proveedores.proveedores.length===0){
+        dispatch(getProveedoresItems());
+        dispatch(getPlatosItems());
+      }
+     
+    }, []);
+
     return(
         <div className='ufaufa2'>
                 <ReviewItems
                     color="#00ffff"
                     txt_1='Resumen de Inventario'
-                    txt_2='100'
+                    txt_2={platos.platos.length}
                     txt_3='Cantidad de Platos'
                     icon={AiOutlineFolderOpen}
                 />
                  <ReviewItems
                     color="#ff8000"
                     txt_1='Resumen de Proveedores'
-                    txt_2='11'
+
+                    txt_2={proveedores.proveedores.length}
                     txt_3='Numero de Proveedores'
                     icon={AiOutlineTeam}
                 />
