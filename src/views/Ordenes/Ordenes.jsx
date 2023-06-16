@@ -2,27 +2,39 @@
 import OrdenesGeneralesContainer from "./components/OrdenesGeneralesContainer";
 import TableItems from "../../components/TableItems/TableItems";
 import './style/index.css';
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getOrdenesItems } from "../../services/get.ordenes.services";
+import { HeaderOrdenes } from "./components/HeaderPlatos";
 
 const Ordenes = () => {
-    const [ordenes, setOrdenes] = useState([]);
-    useEffect(() => {
-      getJson("/platos").then((data) => {
-        setOrdenes(data);
-      });
-    });
+    const dispatch=useDispatch();
+    const ordenes=useSelector((state)=>state.ordenes);
+    useEffect(
+      ()=>{
+        if(ordenes.ordenesItems.length===0){
+          dispatch(getOrdenesItems());
+        }
+      },[]
+    );
+    const data=ordenes.ordenesItems;
+
     return (
       <div className="ordenes-container">
-          <OrdenesGeneralesContainer/>
+        <OrdenesGeneralesContainer/>
+        <HeaderOrdenes/>
         <TableItems
           title="Ordenes"
-          data={ordenes}
+          data={data}
           columns={[
-            { header: "Id", accessor: "id_plato" },
-            { header: "Platos", accessor: "nombre" },
-            { header: "Precio", accessor: "precio" },
-            { header: "Tiempo de preparacion", accessor: "tiempo_preparacion" },
+            { header: "NombreCliente", accessor: "NombreCliente" },
+            { header: "Precio Total Pedido", accessor: "PrecioTotalPedido" },
+            { header: "# ORDEN", accessor: "ID_Pedido_Cliente" },
+            { header: "Entrega Esperada", accessor: "EntregaEsperada" },
+            { header: "Estado", accessor: "Estado" },
           ]}
           height={"500px"}
+          width={"1000px"}
         />
       </div>
     );

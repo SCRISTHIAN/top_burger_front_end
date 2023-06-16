@@ -1,0 +1,29 @@
+.details{
+    width: 100%;
+    height: 100%;
+}
+
+.details .details_body{
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 30px;
+    box-sizing: content-box;
+    width: 95.8%;
+    height: 96.3%;
+    background-color: #202324; 
+}
+.details_body .tails{
+    margin-left: 50px;
+    display: flex;
+}
+.ufa69{
+ margin-top: 80px;
+ margin-left: 50px;
+ font-size: 25px;
+}
+.imagen_detalle{
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+
+}

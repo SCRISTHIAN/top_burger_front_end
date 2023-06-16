@@ -1,0 +1,48 @@
+.ufaufa3{
+    padding-top: 0px;
+    margin: 0px;
+    margin-bottom: -45px;
+    margin-top: 100px;
+
+}
+.ufaufa3 .coni3 {   
+    width: 989px; 
+    display: flex;
+    padding: 15px;
+    margin: 0px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #202324; 
+    justify-content: space-around;
+
+}
+.spacer3{
+    margin-top: -90px;
+    margin-left: 20px;
+    width: 1134px;
+}
+.coni3 h2{
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-left: 50px;
+    width: 500px;
+
+}
+.coni3 button{
+    background: none;
+    border: 2px solid #ff8000;
+    border-radius:15px;
+    padding: 10px;
+    width: 200px;
+    margin-right: 50px;
+    padding-top: 8px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+} 
+.ufaufa3 .coni3 .ufaufita{
+    background-color: #ff8000;
+    color: aliceblue;
+}
+

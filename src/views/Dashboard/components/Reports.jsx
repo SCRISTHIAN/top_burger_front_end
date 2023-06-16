@@ -20,7 +20,7 @@ export function Reports(){
      
     }, []);
     return(
-        <>
+        <div style={{display:'block'}}>
         <div className='container'>
             <h2 className='name1'>Reporte de Ventas</h2>
             <div className='container2'>
@@ -38,7 +38,8 @@ export function Reports(){
             </div>
         </div>
         <HeaderDashboard />
-        <div style={{marginTop:"-100px"}} className="container_3">
+        
+        <div style={{marginTop:"-110px"}} className="container_3">
             <TableItems
             title="Platos"
             data={platos.platos}
@@ -48,14 +49,14 @@ export function Reports(){
             { header: "Precio", accessor: "precio" },
             { header: "Tiempo de preparacion", accessor: "tiempo_preparacion" },
             ]}
-            width={"728px"}
+            width={"770px"}
             height={"235px"}
             />
 
         </div>
+        </div>
 
 
-    </>
 
     );
 }

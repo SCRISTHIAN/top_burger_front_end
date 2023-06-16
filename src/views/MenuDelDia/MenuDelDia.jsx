@@ -2,7 +2,7 @@
 
 
 import './style/index.css';
-import TableItems from "../../components/TableItems/TableItems";
+import TableItems from "../../components/TableItemsUfa/TableItems";
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getMenuItems } from '../../services/get.menudeldia';

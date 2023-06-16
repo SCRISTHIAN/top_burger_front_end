@@ -5,10 +5,10 @@ import Review from './components/Review';
 
 const Dashboard = () => {
     return(
-        <>
-            <Reports className='ufaufa1' />
+        <div style={{display:'flex', marginTop:'-10px',  height:'90%'}}>
+            <Reports className='ufaufa1'/>
             <Review/>
-        </>
+        </div>
     );
 };
 

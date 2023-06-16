@@ -15,6 +15,7 @@ import { Proveedores } from "./views/Proveedores";
 import { store } from "./redux/index.js";
 import Dashboard from "./views/Dashboard/Dashboard";
 import Modelos from "./views/Modelos/Modelos";
+import PlatoDetails from "./views/PlatoDetails/PlatoDetails";
 function App() {
   const location = useLocation();
   const notLoginPage = location.pathname !== "/login";
@@ -34,8 +35,9 @@ function App() {
             <Route path="/ingredientes" element= {<Ingredientes />} /> 
             <Route path="/reportes" element={<Reportes />} />
             <Route path="/proveedores" element={<Proveedores/>} />
-            {/* <Route path="/ordenes" element={<Ordenes/>} /> */}
+            <Route path="/ordenes" element={<Ordenes/>} /> 
             <Route path="/modelos" element={<Modelos/>} /> 
+            <Route path="/platos/:slug" element={<PlatoDetails/>}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
           </Provider>

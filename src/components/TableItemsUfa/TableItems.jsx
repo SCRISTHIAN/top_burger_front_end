@@ -18,7 +18,6 @@ const TableItems = ({ data, columns, title, height, width}) => {
             </thead>
             <tbody>
               {data.map((item, index) => (
-                console.log(item),
                 // //EN ACA EL LISTERNER 
                 <tr className="table-row" key={index}>
                   {
@@ -29,7 +28,9 @@ const TableItems = ({ data, columns, title, height, width}) => {
                               color:item[column.accessor]==='Agotado' ?'#fe4b68': (item[column.accessor]==='Disponible' ?'#00ff40': '' )
                             }}
                           >
+                            <NavLink to={`/platos/${item["ID_Plato"]}`}>
                                {item[column.accessor]}
+                            </NavLink> 
                           </td>
                         )
                     )

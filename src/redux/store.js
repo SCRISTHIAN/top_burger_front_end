@@ -6,6 +6,9 @@ import ingredientesReducer from './states/ingrediente';
 import platosReducer from './states/plato';
 import  ioReducer  from './states/io';
 import  menuReducer  from './states/menu';
+import ordenesReducer from './states/ordenes';
+import vendidosReducer from './states/vendidos'
+import escasosReducer from './states/escasos'
 
 
 
@@ -18,6 +21,9 @@ const store = configureStore({
       platos: platosReducer,
       io: ioReducer,
       menu: menuReducer,
+      ordenes:ordenesReducer,
+      vendidos:vendidosReducer,
+      escasos:escasosReducer
     },
   }
 );

@@ -1,24 +1,29 @@
 import React from "react";
 import "./IngredientesEscasos.css";
 import TableItems from "../../../components/TableItems/TableItems";
+import { useDispatch,useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getEscasosItems } from "../../../services/get.escasos";
 
 const IngredientesEscasos = () => {
-  const users = [
-    { id: 1, name: "John Doe", email: "john@example.com", age: 27 },
-    { id: 2, name: "Jane Doe", email: "jane@example.com", age: 25 },
-    // Más usuarios aquí...
-  ];
+  const dispatch=useDispatch();
+  const escasos=useSelector((state)=>state.escasos);
+  useEffect(() => {
+    if(escasos.escasosItems.length===0){
+      dispatch(getEscasosItems());
+    }
+  }, []);  
   return (
     <div className="ingredientesescasos-container">
       <TableItems
         title="Ingredientes Escasos"
-        data={users}
+        data={escasos.escasosItems}
         columns={[
-          { header: "Name", accessor: "name" },
-          { header: "Email", accessor: "email" },
-          { header: "Age", accessor: "age" },
+          { header: "Nombre", accessor: "Nombre" },
+          { header: "Stock", accessor: "Stock" },
+          { header: "Unidad de Medida", accessor: "Unidad_Medida" },
         ]}
-        height={"200px"}
+        height={"300px"}
         width={"1130px"}
       />
     </div>

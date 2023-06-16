@@ -2,10 +2,10 @@
     width: 732px ;
     display: flex;
     padding: 15px;
-    margin-right: 20px;
+    margin-right: 0px;
     margin-top: 30px;
     margin-bottom: 80px;
-    margin-top:-30px;
+    margin-top:-60px;
     height: 40px;
     border-radius: 15px;
     background-color: #202324; 
@@ -45,7 +45,6 @@
     margin-top: 40px;
     margin-left: 2px;
     width: 800px ;
-    margin-right: 50px;
 }
 /* .ufaufa1{
     padding: 10px;

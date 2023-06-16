@@ -24,10 +24,12 @@ const Ingredientes = () => {
           title="Ingredientes"
           data={ingredientes.ingredientes}
           columns={[
-            { header: "Id", accessor: 'id_ingrediente' },
-            { header: "Ingredientes", accessor: 'nombre' },
-            { header: "Stock", accessor: 'stock' },
-            { header: "Unidad de medida", accessor: 'unidad_medida' },
+            { header: "ID", accessor: 'ID_Ingrediente' },
+            { header: "Nombre", accessor: 'Nombre Ingrediente' },
+            { header: "Stock Restante", accessor: 'Stock Restante' },
+            { header: "Unidad de medida", accessor: 'Unidad_Medida' },
+            { header: "Fecha Caducidad", accessor: 'Fecha_Caducidad' },
+            { header: "Disponibilidad", accessor: 'Disponibilidad' },
           ]}
           height={"700px"}
           width={"1130px"}
