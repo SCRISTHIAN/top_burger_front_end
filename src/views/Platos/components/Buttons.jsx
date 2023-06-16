@@ -2,7 +2,7 @@ import React from 'react'
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { Button } from '@mui/material';
 import './Buttons.css'
-
+// ---
 const Buttons=()=> {
   return (
     <div className='boton-head'>
