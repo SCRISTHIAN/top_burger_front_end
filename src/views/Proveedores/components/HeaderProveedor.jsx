@@ -1,3 +1,4 @@
+import { handlePrint } from '../../../utils/print';
 import '../../Platos/components/HeaderPlatos.css';
 import {AiOutlineFunnelPlot,AiOutlinePrinter} from 'react-icons/ai'
 export function HeaderProveedor(){
@@ -8,7 +9,7 @@ export function HeaderProveedor(){
                 <h2>PROVEEDORES</h2>
                 <button className='ufaufita'><AiOutlinePrinter/>Agregar</button>
                 <button ><AiOutlineFunnelPlot/>Filtros</button>
-                <button><AiOutlinePrinter/>Descargar</button>
+                <button onClick={handlePrint}><AiOutlinePrinter/>Descargar</button>
             </div>
         </div>
     )

@@ -40,4 +40,9 @@
   .table-container-main .table-row td {
     padding: 10px 0;
   }
-  
+  .navlink{
+    color: aliceblue !important;
+  }
+  .navlink:hover{
+    color: aliceblue !important;
+  }

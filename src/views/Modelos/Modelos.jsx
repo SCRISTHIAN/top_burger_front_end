@@ -25,7 +25,30 @@ const Modelos = () => {
     // }, []);
     // const data=io.ioItems;
     // const key=Object.keys(data);
-    console.log(data);
+    
+    const ufa=[
+        {
+            sem:"Semana 1",
+            mayo:data["mayonesa"][0],
+            papa:data["papa"][0]
+        },
+        {
+            sem:"Semana 2",
+            mayo:data["mayonesa"][1],
+            papa:data["papa"][1]
+        },
+        {
+            sem:"Semana 3",
+            mayo:data["mayonesa"][2],
+            papa:data["papa"][2]
+        },
+        {
+            sem:"Semana 4",
+            mayo:data["mayonesa"][3],
+            papa:data["papa"][3]
+        },
+    ]
+    console.log(ufa);
     return (
         <>
             <div className='tables'>
@@ -34,36 +57,25 @@ const Modelos = () => {
             {/* <div className='tables1'>
                 <LineGraph/>
             </div> */}
-
-            <div className='predictions'>
-                <div className='tables'>
-                    <div className='header'>
+            
+            <div className='predictions4'>
+                <div className='tables4'>
+                    <div className='header4'>
                         <h3>SE REQUERE</h3>
                         <button>Actualizar</button>
                     </div>
-                   {/* <TableItems
-                              data={data}
+                    <div className='body4'>
+                    <TableItems
+                              data={ufa}
                               columns={[
-                                { header: "Semana 1", accessor: "semana1" },
-                                { header: "Semana 2", accessor: "semana2" },
-                                { header: "Semana 3", accessor: "semana3" },
-                                { header: "Semana 4", accessor: "semana4"},
+                                { header: "Semana", accessor: "sem" },
+                                { header: "Mayonesa", accessor: "mayo" },
+                                { header: "Papa", accessor: "papa" },
                               ]}
-                              height={"400px"}
-                              width={"1130px"}
-                    />  */}
-                    {/* <TableItems
-                              data={io.ioItems.mayonesa}
-                              columns={[
-                                { header: "Semana 1", accessor: 0 },
-                                { header: "Semana 2", accessor: 1 },
-                                { header: "Semana 3", accessor: 2 },
-                                { header: "Semana 4", accessor: 3 },
-                              ]}
-                              height={"400px"}
-                              width={"1130px"}
-                    />                  */}
-                    {/* /**en aca ta tabla   */}
+                              height={"250px"}
+                              width={"568px"}
+                    /> 
+                    </div> 
                 </div>
 
 

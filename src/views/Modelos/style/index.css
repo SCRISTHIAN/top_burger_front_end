@@ -9,6 +9,21 @@
     margin-top: 15px;
     border-radius: 20px;
     padding: 10px;
+    margin-left: 10px;
+}
+.tables4{
+    font-size: 20px;
+    background-color: #202324; 
+    width: 50%;
+    height: 35%;
+    margin-top: 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.body4{
+    margin-left: -10px;
+    margin-top: -50px;
 }
 .tables3{
     font-size: 20px;
@@ -33,26 +48,28 @@
     border-radius: 20px;
     padding: 10px;
 }
-.header{
+.header4{
+    margin-top: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #202324; 
     padding: 5px;
+
 }
-.header h3{
- font-size:30px;
+.header4 h3{
+ font-size:25px;
  font-weight:lighter;
  color:beige ;
  margin-left: 5px;
 }
-.header button {
+.header4 button {
     background: none;
     border: 2px solid #ff8000;
     border-radius:15px;
     padding: 10px;
     padding-top: 8px;
     font: inherit;
+    font-size: 15px;
     color: inherit;
     cursor: pointer;
     margin-left: 175px;

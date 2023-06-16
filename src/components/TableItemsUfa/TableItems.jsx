@@ -28,7 +28,7 @@ const TableItems = ({ data, columns, title, height, width}) => {
                               color:item[column.accessor]==='Agotado' ?'#fe4b68': (item[column.accessor]==='Disponible' ?'#00ff40': '' )
                             }}
                           >
-                            <NavLink to={`/platos/${item["ID_Plato"]}`}>
+                            <NavLink to={`/platos/${item["ID_Plato"]}` } className="navlink" >
                                {item[column.accessor]}
                             </NavLink> 
                           </td>

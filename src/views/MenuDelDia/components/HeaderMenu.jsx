@@ -1,3 +1,4 @@
+import { handlePrint } from '../../../utils/print';
 import '../../Platos/components/HeaderPlatos.css';
 import {AiOutlineFunnelPlot,AiOutlinePrinter} from 'react-icons/ai'
 export function HeaderMenu(){
@@ -7,7 +8,7 @@ export function HeaderMenu(){
             <div className='coni'>
                 <h2>Disponibilidad de Platos</h2>
                 <button><AiOutlineFunnelPlot/>Disponibilidad</button>
-                <button><AiOutlinePrinter/>Descargar</button>
+                <button onClick={handlePrint}><AiOutlinePrinter/>Descargar</button>
             </div>
         </div>
     )

@@ -38,5 +38,9 @@
 .ufaufa2 .coni2 .ufaufita2{
     background-color: #ff8000;
     color: aliceblue;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
 }
 

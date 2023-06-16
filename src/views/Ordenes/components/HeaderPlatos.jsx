@@ -1,3 +1,4 @@
+import { handlePrint } from '../../../utils/print';
 import './HeaderPlatos.css';
 import {AiOutlineFunnelPlot,AiOutlinePrinter} from 'react-icons/ai'
 export function HeaderOrdenes(){
@@ -7,7 +8,7 @@ export function HeaderOrdenes(){
             <div className='coni3'>
                 <h2>ORDENES</h2>
                 <button className='ufaufita'><AiOutlineFunnelPlot/>Agregar</button>
-                <button><AiOutlinePrinter/>Descargar</button>
+                <button onClick={handlePrint}><AiOutlinePrinter/>Descargar</button>
             </div>
         </div>
     )

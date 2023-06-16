@@ -56,8 +56,8 @@
 }
 .ufaufa2{
     display: block;
-    width: 18%;
-    margin-left:50% ;
+    width: 15%;
+    margin-left:45% ;
     margin-top: 0px;
     align-items: center;
  
@@ -68,7 +68,7 @@
     margin-top: 90px;
 }
 .container_2{ 
-    width:344px;
+    width:300px;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
     background-color: #202324;
